@@ -28,7 +28,7 @@ public class Monte extends Robot {
 
 	public void onHitByBullet(HitByBulletEvent e) {
 		if (e.getName().equals("de.oc.robocode.Curando")) {
-			turnLeft(e.getBearing());
+			turnLeft(e.getBearing()-45);
 			ahead(300);
 		}
 	}
