@@ -26,6 +26,7 @@ public class Monte extends Robot {
 		fireBullet(getEnergy());
 	}
 
+	// does not work
 	public void onHitByBullet(HitByBulletEvent e) {
 		if (e.getName().equals("de.oc.robocode.Curando")) {
 			turnLeft(e.getBearing()-45);
